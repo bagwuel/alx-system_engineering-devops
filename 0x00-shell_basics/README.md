@@ -35,3 +35,10 @@
 #14-copy_html is a script file that copies all the HTML files from the current working directory to the parent of the working directory, but only copy files that did not exist in the parent of the working directory or were newer than the versions in the parent of the working directory.
 #The -u option  copies files that did not exist in the parent of the working directory or were newer than the versions in the parent of the working directory.
 
+#100-lets_move is a script file that moves all files beginning with an uppercase letter to the directory /tmp/u.
+#[[:upper:]]* signifies that the files must start with capital letters
+
+#101-clean_emacs is a script file that deletes all files in the current working directory that end with the character ~
+#* is a wild card character that signifies anything ending with ~
+
+#102-tree is script file that creates the directories welcome/, welcome/to/ and welcome/to/school in the current directory.
