@@ -45,5 +45,9 @@
 #The -p option creates the parent directories and does not give an error or create a new directory if that parent directory exists
 
 #103-commas is script file that lists all the files and directories of the current directory, separated by commas (,) with directory names ending with a slash (/), files and directories starting with a dot (.) are listed, the listing is alpha ordered except for the directories . and .. which should be listed at the very beginning, only digits and letters are used to sort with digits should come first, with the listing endind with a new line
+#The -x option sorts the contents of the file
+#The -a option displays all the files and directories including hidden files
+#The -m option separates the content of the directory with a comma
+#The -p option adds a foward slash to the end of the directories
 
-
+#school.mgc is a file that detects if a file is a School data file
