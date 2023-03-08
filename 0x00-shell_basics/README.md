@@ -42,3 +42,8 @@
 #* is a wild card character that signifies anything ending with ~
 
 #102-tree is script file that creates the directories welcome/, welcome/to/ and welcome/to/school in the current directory.
+#The -p option creates the parent directories and does not give an error or create a new directory if that parent directory exists
+
+#103-commas is script file that lists all the files and directories of the current directory, separated by commas (,) with directory names ending with a slash (/), files and directories starting with a dot (.) are listed, the listing is alpha ordered except for the directories . and .. which should be listed at the very beginning, only digits and letters are used to sort with digits should come first, with the listing endind with a new line
+
+
