@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # Bash script to connect to a server without typing a password
-Host 100.25.158.171
-    HostName 100.25.158.171
+Host 52.91.123.208
+    HostName 52.91.123.208
     User ubuntu
     IdentityFile ~/.ssh/school
     PasswordAuthentication no
