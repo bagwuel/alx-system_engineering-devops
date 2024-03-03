@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Make it sweet and short
-sed -i s/8080/80/ /etc/nginx/sites-enabled/default
-service nginx restart > /dev/null
-kill "$(pgrep nginx | head -1)"
+# same as task 0 but -f added to ln to forcefully remove the file if it exists
+ln -sf /etc/nginx/sites-available/default /etc/nginx/sites-enabled/default
+sudo service nginx restart
+rm /run/nginx.pid
