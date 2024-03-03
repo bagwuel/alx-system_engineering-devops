@@ -3,6 +3,17 @@
 
 sudo apt-get -y update
 sudo apt-get -y install nginx
+
+sudo sh -c 'echo "Hello World!" > /var/www/html/index.nginx-debian.html'
+
+echo "github.com/bagwuel" | sudo tee /var/www/html/redirect_me
+
+newstr="server_name _;\n\trewrite ^\/redirect_me https:\/\/github.com\/bagwuel permanent;"
+
+sudo sed -i "s/server_name _;/$newstr/" /etc/nginx/sites-enabled/default
+
+echo "Ceci n'est pas une page" | sudo tee /var/www/html/404.html
+
 newstr="listen 80 default_server;\n\terror_page 404 \/404.html;\n\tlocation = 404.html {\n\t\troot \/var\/www\/html;\n\t\tinternal;\n\t}"
 
 sudo sed -i "s/listen 80 default_server;/$newstr/" /etc/nginx/sites-enabled/default
