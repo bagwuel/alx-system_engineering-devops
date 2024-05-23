@@ -1,4 +1,4 @@
-# instal and configure nginx
+# install and configure nginx
 exec { 'apt-update':
   command     => 'apt-get -y update',
   path        => '/usr/bin:/bin',
